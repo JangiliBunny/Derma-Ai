@@ -1,0 +1,10 @@
+{
+  "Basal Cell Carcinoma": 0,
+  "Contact Dermatitis": 1,
+  "Lupus": 2,
+  "Melanoma": 3,
+  "Psoriasis": 4,
+  "Urticaria": 5,
+  "Vascular Lesion": 6,
+  "Vitiligo": 7
+}

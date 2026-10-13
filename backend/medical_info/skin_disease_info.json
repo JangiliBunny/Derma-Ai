@@ -1,0 +1,518 @@
+{
+  "Melanoma": {
+    "disease_name": "Melanoma",
+    "description": "Melanoma is the most serious form of skin cancer, originating in pigment-producing melanocytes. Early detection and prompt surgical excision are critical for optimal prognosis.",
+    "symptoms": [
+      "Asymmetrical shape with irregular, notched, or blurred borders",
+      "Varied colors within the same lesion (tan, brown, black, red, white, or blue)",
+      "Diameter larger than 6mm (pencil eraser size), though can be smaller",
+      "Evolution in size, shape, color, or elevation over time",
+      "New itching, tenderness, oozing, or bleeding in a mole"
+    ],
+    "causes": [
+      "Intermittent severe UV radiation exposure (sunburns)",
+      "Genetic mutations (CDKN2A, BRAF)",
+      "High mole count or dysplastic nevus syndrome",
+      "Fair skin, light hair, and personal/family history of skin cancer"
+    ],
+    "precautions": [
+      "Perform monthly self-skin exams using the ABCDE rule",
+      "Apply broad-spectrum SPF 30+ sunscreen daily and reapply every 2 hours",
+      "Avoid tanning beds and direct peak sun exposure (10 AM - 4 PM)",
+      "Wear protective clothing, wide-brimmed hats, and UV-blocking sunglasses"
+    ],
+    "warning_signs": [
+      "Rapidly growing mole or dark spot",
+      "Lesion that bleeds, crusts, or refuses to heal",
+      "New pigmented stripe under a fingernail or toenail"
+    ],
+    "doctor_advice": "Immediate in-person evaluation by a board-certified dermatologist is strongly recommended for dermoscopy and diagnostic biopsy.",
+    "reference_url": "https://www.cancer.org/cancer/melanoma-skin-cancer.html",
+    "last_reviewed": "2026-03-01"
+  },
+  "Basal Cell Carcinoma": {
+    "disease_name": "Basal Cell Carcinoma",
+    "description": "Basal Cell Carcinoma (BCC) is the most common form of skin cancer, arising in the basal layer of the epidermis. It grows slowly and rarely metastasizes but can cause localized tissue destruction.",
+    "symptoms": [
+      "Pearly, translucent, or waxy bump with visible tiny blood vessels (telangiectasias)",
+      "Flat, firm, scar-like lesion that appears pale yellow or white",
+      "Sore that bleeds, oozes, or crusts, heals, and then recurs",
+      "Pink growth with a rolled border and central crust or indentation"
+    ],
+    "causes": [
+      "Cumulative long-term ultraviolet (UV) radiation from sun exposure",
+      "Use of indoor tanning equipment",
+      "Older age and fair skin types (Fitzpatrick I-II)"
+    ],
+    "precautions": [
+      "Protect sun-exposed areas (face, neck, ears, scalp) with daily broad-spectrum SPF 30+",
+      "Inspect persistent non-healing bumps or pink patches regularly",
+      "Schedule annual full-body skin checks with a dermatologist"
+    ],
+    "warning_signs": [
+      "A sore that does not heal within 4 weeks",
+      "A bump that easily bleeds with minimal trauma"
+    ],
+    "doctor_advice": "Consult a dermatologist for clinical evaluation, skin biopsy, and treatment options such as Mohs surgery or excision.",
+    "reference_url": "https://www.skin-cancer.org/skin-cancer-information/basal-cell-carcinoma/",
+    "last_reviewed": "2026-03-01"
+  },
+  "Actinic Keratosis": {
+    "disease_name": "Actinic Keratosis",
+    "description": "Actinic Keratosis (AK) is a rough, scaly precancerous skin lesion caused by chronic UV damage. If left untreated, a small percentage may progress to squamous cell carcinoma.",
+    "symptoms": [
+      "Rough, dry, scaly, or sandpaper-like patch of skin",
+      "Flat or slightly raised lesion, ranging from skin-colored to reddish-brown",
+      "Occasional itching, burning, or tenderness when rubbed"
+    ],
+    "causes": [
+      "Chronic, long-term exposure to sunlight or tanning beds",
+      "Cumulative UV damage over decades"
+    ],
+    "precautions": [
+      "Strict sun protection using broad-spectrum SPF 50+ sunscreen",
+      "Wear sun-protective hats and UV clothing during outdoor activities",
+      "Avoid outdoor activities during peak UV index hours"
+    ],
+    "warning_signs": [
+      "Rapid thickening, enlargement, or ulceration of the lesion",
+      "Development of a hard, horn-like projection (cutaneous horn)"
+    ],
+    "doctor_advice": "Dermatological evaluation is recommended for field therapy (cryotherapy, topical 5-FU, or photodynamic therapy).",
+    "reference_url": "https://www.aad.org/public/diseases/skin-cancer/actinic-keratosis",
+    "last_reviewed": "2026-03-01"
+  },
+  "Nevus": {
+    "disease_name": "Nevus (Common Mole)",
+    "description": "A nevus (mole) is a benign melanocytic growth appearing as a small, circumscribed skin spot. Most common moles are harmless, though changing moles require evaluation.",
+    "symptoms": [
+      "Uniform tan, brown, black, or skin-colored spot",
+      "Round or oval shape with smooth, distinct borders",
+      "Flat (macule) or slightly raised (papule)",
+      "Consistent appearance over long periods"
+    ],
+    "causes": [
+      "Proliferation of melanocyte pigment cells",
+      "Genetic predisposition and childhood sun exposure"
+    ],
+    "precautions": [
+      "Track mole appearance, size, and shape periodically",
+      "Apply daily sunscreen to prevent UV-induced dysplastic changes",
+      "Seek medical opinion if a mole develops irregular features"
+    ],
+    "warning_signs": [
+      "Development of ABCDE characteristics (asymmetry, border irregularity, color shift)",
+      "New onset of pain, itching, bleeding, or elevation"
+    ],
+    "doctor_advice": "Benign moles require no treatment, but any new or evolving mole should be examined by a dermatologist.",
+    "reference_url": "https://www.mayoclinic.org/diseases-conditions/moles/symptoms-causes/syc-20375200",
+    "last_reviewed": "2026-03-01"
+  },
+  "Benign Keratosis": {
+    "disease_name": "Benign Keratosis",
+    "description": "Benign Keratosis encompasses non-cancerous skin growths such as seborrheic keratosis, solar lentigines, and lichen planus-like keratosis that develop with age and sun exposure.",
+    "symptoms": [
+      "Waxy, elevated, 'stuck-on' appearance",
+      "Color ranging from light tan to dark brown or black",
+      "Rough, verrucous, or velvety surface texture",
+      "Asymptomatic or mild friction irritation"
+    ],
+    "causes": [
+      "Natural skin aging processes",
+      "Genetic predisposition",
+      "Cumulative UV exposure (for solar lentigines)"
+    ],
+    "precautions": [
+      "Avoid scratching or picking at raised lesions to prevent secondary infection",
+      "Use mild cleansers and moisturizers on affected areas"
+    ],
+    "warning_signs": [
+      "Rapid change in color, ulceration, or spontaneous bleeding",
+      "Difficulty distinguishing the growth from a malignant melanoma"
+    ],
+    "doctor_advice": "Benign lesions do not require removal unless inflamed or cosmetically desired. Dermoscopy helps rule out malignancy.",
+    "reference_url": "https://dermnetnz.org/topics/benign-skin-lesions",
+    "last_reviewed": "2026-03-01"
+  },
+  "Seborrheic Keratosis": {
+    "disease_name": "Seborrheic Keratosis",
+    "description": "Seborrheic Keratosis is a very common, non-cancerous skin growth that typically appears in middle-aged and older adults. It has a characteristic 'stuck-on' waxy appearance.",
+    "symptoms": [
+      "Round or oval waxy plaque appearing glued to the skin",
+      "Surface may be smooth or rough and crumbly",
+      "Color varies from light yellow-tan to dark brown or black",
+      "Common on chest, back, shoulders, face, and neck"
+    ],
+    "causes": [
+      "Epidermal cell maturation changes",
+      "Familial inheritance (genetic predisposition)"
+    ],
+    "precautions": [
+      "Prevent snagging on clothing or jewelry",
+      "Do not attempt to scrape or cut off growths at home"
+    ],
+    "warning_signs": [
+      "Sudden eruptive appearance of multiple new lesions (Leser-Trélat sign)",
+      "Bleeding or severe inflammation following irritation"
+    ],
+    "doctor_advice": "Harmless benign growths. Cryotherapy or curettage can be performed by a dermatologist if symptomatic.",
+    "reference_url": "https://www.aad.org/public/diseases/a-z/seborrheic-keratoses-overview",
+    "last_reviewed": "2026-03-01"
+  },
+  "Dermatofibroma": {
+    "disease_name": "Dermatofibroma",
+    "description": "Dermatofibroma is a common, benign fibrous skin nodule often occurring on the lower legs, frequently developing after minor trauma like a bug bite or razor nick.",
+    "symptoms": [
+      "Small, hard, firm button-like nodule beneath the skin surface",
+      "Color ranges from pinkish-red to reddish-brown",
+      "'Dimple sign': lesion dimples inward when pinched from the sides",
+      "Usually asymptomatic, occasionally mildly itchy or tender"
+    ],
+    "causes": [
+      "Fibroblastic reaction to minor skin trauma (arthropod bite, puncture)"
+    ],
+    "precautions": [
+      "Avoid shaving directly over raised nodules to prevent nicks",
+      "Monitor for stability in size and firm texture"
+    ],
+    "warning_signs": [
+      "Rapid growth, bleeding, or color change"
+    ],
+    "doctor_advice": "Benign lesion requiring no treatment. Surgical excision is available if painful or irritated.",
+    "reference_url": "https://dermnetnz.org/topics/dermatofibroma",
+    "last_reviewed": "2026-03-01"
+  },
+  "Vascular Lesion": {
+    "disease_name": "Vascular Lesion",
+    "description": "Vascular Lesions include benign blood vessel malformations and proliferations such as cherry angiomas, telangiectasias, pyogenic granulomas, and port-wine stains.",
+    "symptoms": [
+      "Bright red, purple, or bluish spots or elevated papules",
+      "Lesions blanch (fade) under direct pressure",
+      "Pyogenic granulomas bleed easily with minor contact"
+    ],
+    "causes": [
+      "Endothelial cell proliferation or vessel dilation",
+      "Hormonal changes, trauma, or congenital vascular development"
+    ],
+    "precautions": [
+      "Avoid picking or pressing aggressively on vascular growths",
+      "Apply direct pressure if bleeding occurs after minor friction"
+    ],
+    "warning_signs": [
+      "Recurrent, profuse bleeding from a rapidly enlarging red nodule",
+      "Sudden darkening or irregular border expansion"
+    ],
+    "doctor_advice": "Dermatological laser therapy or electrocautery can effectively treat symptomatic vascular lesions.",
+    "reference_url": "https://www.mayoclinic.org/diseases-conditions/hemangioma/symptoms-causes/syc-20352334",
+    "last_reviewed": "2026-03-01"
+  },
+  "Psoriasis": {
+    "disease_name": "Psoriasis",
+    "description": "Psoriasis is a chronic autoimmune condition that speeds up skin cell life cycles, causing skin cells to build up rapidly and form thick, silvery scaly plaques.",
+    "symptoms": [
+      "Raised, red skin patches covered with thick, silvery scales",
+      "Dry, cracked skin that may bleed",
+      "Itching, burning, or soreness around plaques",
+      "Common on elbows, knees, scalp, lower back, and nails"
+    ],
+    "causes": [
+      "Immune system dysregulation (T-cell activation)",
+      "Genetic factors combined with environmental triggers (stress, infections, cold weather)"
+    ],
+    "precautions": [
+      "Keep skin thoroughly moisturized with thick ointments or creams",
+      "Avoid skin trauma, harsh soaps, smoking, and excessive alcohol",
+      "Manage emotional stress and maintain moderate, safe sun exposure"
+    ],
+    "warning_signs": [
+      "Widespread body redness and skin peeling (erythrodermic psoriasis)",
+      "Joint pain, stiffness, or swelling (psoriatic arthritis)"
+    ],
+    "doctor_advice": "Consult a dermatologist for individualized treatment including topical steroids, phototherapy, or biologic therapies.",
+    "reference_url": "https://www.psoriasis.org/about-psoriasis/",
+    "last_reviewed": "2026-03-01"
+  },
+  "Eczema": {
+    "disease_name": "Eczema (Atopic Dermatitis)",
+    "description": "Eczema (Atopic Dermatitis) is a chronic inflammatory skin condition characterized by dry, intensely itchy, red, and irritated skin patches due to an impaired skin barrier.",
+    "symptoms": [
+      "Intense itching (pruritus), especially at night",
+      "Red, dry, crusty, or leathery skin patches",
+      "Small raised bumps that may leak fluid when scratched",
+      "Common on flexural areas (elbow creases, back of knees, wrists, neck)"
+    ],
+    "causes": [
+      "Skin barrier dysfunction (FLG filaggrin gene variants)",
+      "Immune system hypersensitivity",
+      "Triggers like dry air, harsh soaps, dust mites, pet dander, and stress"
+    ],
+    "precautions": [
+      "Apply ceramide-rich moisturizers immediately after lukewarm baths",
+      "Use mild, fragrance-free, soap-free body washes",
+      "Wear soft, breathable cotton clothing and avoid wool",
+      "Keep fingernails trimmed to minimize scratch damage"
+    ],
+    "warning_signs": [
+      "Signs of secondary bacterial infection (yellow crusting, pus, worsening redness)",
+      "Widespread painful blistering (eczema herpeticum)"
+    ],
+    "doctor_advice": "A dermatologist can prescribe topical corticosteroids, calcineurin inhibitors, or targeted biologics.",
+    "reference_url": "https://nationaleczema.org/eczema/",
+    "last_reviewed": "2026-03-01"
+  },
+  "Acne": {
+    "disease_name": "Acne Vulgaris",
+    "description": "Acne Vulgaris is a common inflammatory disorder of the pilosebaceous unit, resulting in comedones, papules, pustules, and sometimes deeper nodulocystic lesions.",
+    "symptoms": [
+      "Non-inflammatory comedones (blackheads and whiteheads)",
+      "Inflammatory red papules and pus-filled pustules",
+      "Deep, painful nodules or cysts under the skin",
+      "Common on face, forehead, chest, upper back, and shoulders"
+    ],
+    "causes": [
+      "Excess sebum production stimulated by androgens",
+      "Hyperkeratinization leading to clogged pores",
+      "Cutibacterium acnes (C. acnes) bacterial proliferation",
+      "Inflammatory response"
+    ],
+    "precautions": [
+      "Wash face twice daily with a gentle, non-comedogenic cleanser",
+      "Avoid squeezing, popping, or picking at pimples to prevent scarring",
+      "Use non-comedogenic sunscreen and oil-free cosmetics",
+      "Trial OTC salicylic acid or benzoyl peroxide treatments"
+    ],
+    "warning_signs": [
+      "Severe deep nodular/cystic acne causing permanent scarring",
+      "Sudden severe flare accompanied by fever (acne fulminans)"
+    ],
+    "doctor_advice": "Persistent or severe acne should be managed by a dermatologist with topical retinoids, oral antibiotics, or isotretinoin.",
+    "reference_url": "https://www.aad.org/public/diseases/acne/really-acne/overview",
+    "last_reviewed": "2026-03-01"
+  },
+  "Rosacea": {
+    "disease_name": "Rosacea",
+    "description": "Rosacea is a chronic inflammatory vascular skin condition affecting primarily the central facial skin, leading to persistent redness, flushing, visible blood vessels, and papules.",
+    "symptoms": [
+      "Facial flushing and persistent redness across nose and cheeks",
+      "Visible small blood vessels (telangiectasias)",
+      "Swollen red bumps and pustules resembling acne (papulopustular rosacea)",
+      "Eye burning, dryness, or stinging (ocular rosacea)",
+      "Skin thickening on the nose (rhinophyma)"
+    ],
+    "causes": [
+      "Neurovascular dysregulation and innate immune hyperreactivity",
+      "Environmental triggers: spicy foods, hot beverages, alcohol, extreme temperatures, sun, stress"
+    ],
+    "precautions": [
+      "Identify and avoid personal flare triggers",
+      "Apply gentle, physical (mineral) broad-spectrum SPF 30+ daily",
+      "Use mild, non-irritating facial cleansers; avoid harsh scrubs and alcohol toners"
+    ],
+    "warning_signs": [
+      "Eye symptoms such as pain, blurred vision, or severe dryness",
+      "Progressive thickening of skin on the nose"
+    ],
+    "doctor_advice": "Dermatological care can manage symptoms using topical ivermectin, metronidazole, laser therapy, or oral antibiotics.",
+    "reference_url": "https://www.rosacea.org/",
+    "last_reviewed": "2026-03-01"
+  },
+  "Vitiligo": {
+    "disease_name": "Vitiligo",
+    "description": "Vitiligo is an autoimmune condition in which the immune system targets and destroys functional melanocytes, resulting in smooth, depigmented white patches of skin.",
+    "symptoms": [
+      "Loss of skin color in chalk-white or milky-white patches",
+      "Premature whitening or graying of hair, eyelashes, or eyebrows",
+      "Depigmentation around body openings (mouth, eyes, nostrils)",
+      "Symmetrical distribution across hands, face, knees, and feet"
+    ],
+    "causes": [
+      "Autoimmune destruction of melanocyte cells",
+      "Genetic vulnerability combined with oxidative stress"
+    ],
+    "precautions": [
+      "Protect depigmented skin with SPF 50+ sunscreen as white skin burns easily",
+      "Avoid skin friction, abrasions, or physical injury (Koebner phenomenon)"
+    ],
+    "warning_signs": [
+      "Rapidly spreading depigmentation patches across new body regions"
+    ],
+    "doctor_advice": "A dermatologist can evaluate repigmentation treatments including topical corticosteroids, JAK inhibitors, and narrowband UVB phototherapy.",
+    "reference_url": "https://www.niams.nih.gov/health-topics/vitiligo",
+    "last_reviewed": "2026-03-01"
+  },
+  "Warts": {
+    "disease_name": "Warts (Verrucae)",
+    "description": "Warts are benign, contagious skin growths caused by localized infection of keratinocytes with the Human Papillomavirus (HPV).",
+    "symptoms": [
+      "Small, grainy, rough flesh-colored or pink bumps",
+      "Surface dotted with tiny black pinpoint dots (clotted capillaries)",
+      "Common on fingers, hands, elbows, and soles of feet (plantar warts)",
+      "May be tender under pressure on soles of feet"
+    ],
+    "causes": [
+      "Infection with Human Papillomavirus (HPV) strains via direct contact or fomites"
+    ],
+    "precautions": [
+      "Avoid picking, scratching, or shaving over warts to prevent viral spread",
+      "Wear sandals in public showers and pool decks",
+      "Do not share towels, nail clippers, or personal items"
+    ],
+    "warning_signs": [
+      "Warts that bleed, become painful, or change appearance rapidly",
+      "Warts in individuals with weakened immune systems"
+    ],
+    "doctor_advice": "OTC salicylic acid preparations can be tried. Persistent warts can be treated by a dermatologist with cryotherapy or laser treatment.",
+    "reference_url": "https://www.aad.org/public/diseases/a-z/warts-overview",
+    "last_reviewed": "2026-03-01"
+  },
+  "Impetigo": {
+    "disease_name": "Impetigo",
+    "description": "Impetigo is a highly contagious superficial bacterial skin infection most commonly affecting infants and young children, characterized by honey-colored crusts.",
+    "symptoms": [
+      "Red sores that quickly rupture, ooze for days, and form honey-colored crusts",
+      "Fluid-filled blisters (bullous impetigo)",
+      "Itching and mild soreness around nose, mouth, and hands"
+    ],
+    "causes": [
+      "Staphylococcus aureus or Streptococcus pyogenes bacterial entry into broken skin"
+    ],
+    "precautions": [
+      "Wash affected areas gently with mild soap and water, then cover loosely",
+      "Wash clothing, linens, and towels daily in hot water",
+      "Keep infected children home from school until contagiousness passes"
+    ],
+    "warning_signs": [
+      "Spreading redness, warmth, or fever indicating deeper infection (cellulitis)",
+      "Renal symptoms (dark urine) following streptococcal skin infection"
+    ],
+    "doctor_advice": "Impetigo requires prompt evaluation by a healthcare provider for prescription topical mupirocin or oral antibiotics.",
+    "reference_url": "https://www.cdc.gov/groupastrep/diseases-public/impetigo.html",
+    "last_reviewed": "2026-03-01"
+  },
+  "Tinea": {
+    "disease_name": "Tinea (Fungal Skin Infection)",
+    "description": "Tinea refers to superficial fungal infections of the keratinized tissues (skin, hair, nails) caused by dermatophyte fungi.",
+    "symptoms": [
+      "Itchy, scaly, reddish circular or spreading skin patches",
+      "Active leading edge with central clearing",
+      "Maceration and peeling between toes (tinea pedis / athlete's foot)",
+      "Chafing, red-brown rash in groin folds (tinea cruris / jock itch)"
+    ],
+    "causes": [
+      "Dermatophyte fungal growth (Trichophyton, Microsporum, Epidermophyton)",
+      "Warmth, humidity, tight clothing, and friction"
+    ],
+    "precautions": [
+      "Keep affected skin clean and completely dry",
+      "Change socks and underwear daily",
+      "Use OTC antifungal creams (terbinafine, clotrimazole) as directed",
+      "Avoid sharing footwear, towels, or athletic gear"
+    ],
+    "warning_signs": [
+      "Spreading inflammation, severe pain, or purulent pus discharge"
+    ],
+    "doctor_advice": "Persistent fungal infections should be evaluated by a physician for prescription topical or oral antifungal medication.",
+    "reference_url": "https://www.cdc.gov/fungal/diseases/ringworm/index.html",
+    "last_reviewed": "2026-03-01"
+  },
+  "Ringworm": {
+    "disease_name": "Ringworm (Tinea Corporis)",
+    "description": "Ringworm (Tinea Corporis) is a superficial dermatophyte fungal infection affecting body skin, creating characteristic ring-shaped scaly lesions.",
+    "symptoms": [
+      "Ring-shaped red, raised scaly border with clearer skin in the middle",
+      "Persistent localized itching and scaling",
+      "Lesions expand outward slowly"
+    ],
+    "causes": [
+      "Direct skin-to-skin contact with infected humans, pets (cats/dogs), or soil"
+    ],
+    "precautions": [
+      "Apply OTC antifungal cream extending 1 inch beyond lesion borders",
+      "Have pets checked by a veterinarian if they show hair loss or scaling",
+      "Avoid scratching to prevent secondary bacterial infection"
+    ],
+    "warning_signs": [
+      "Extensive body coverage or failure to improve after 2 weeks of OTC antifungal treatment"
+    ],
+    "doctor_advice": "Consult a healthcare provider for confirmation (KOH prep) and prescription strength antifungal care.",
+    "reference_url": "https://www.cdc.gov/fungal/diseases/ringworm/symptoms.html",
+    "last_reviewed": "2026-03-01"
+  },
+  "Contact Dermatitis": {
+    "disease_name": "Contact Dermatitis",
+    "description": "Contact Dermatitis is an inflammatory skin reaction triggered by direct contact with irritants (irritant contact dermatitis) or allergens (allergic contact dermatitis).",
+    "symptoms": [
+      "Red rash, swelling, and localized skin warmth",
+      "Intense itching, burning, or stinging sensations",
+      "Blisters or tiny bumps that ooze and crust",
+      "Rash confined to area of substance contact"
+    ],
+    "causes": [
+      "Irritants: harsh soaps, detergents, chemicals, friction",
+      "Allergens: poison ivy/oak (urushiol), nickel, fragrances, latex, topical preservatives"
+    ],
+    "precautions": [
+      "Wash skin immediately after suspected exposure to remove offending agent",
+      "Apply cool compresses and bland fragrance-free moisturizers",
+      "Use OTC 1% hydrocortisone cream short-term for localized itching",
+      "Identify and avoid contact with known trigger substances"
+    ],
+    "warning_signs": [
+      "Widespread severe blistering, facial swelling, or rash near eyes/mouth",
+      "Signs of bacterial infection (pus, increasing redness and warmth)"
+    ],
+    "doctor_advice": "A dermatologist can perform patch testing to identify specific allergens and prescribe potent topical steroids.",
+    "reference_url": "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis",
+    "last_reviewed": "2026-03-01"
+  },
+  "Lupus": {
+    "disease_name": "Cutaneous Lupus",
+    "description": "Cutaneous Lupus Erythematosus (CLE) is an autoimmune skin condition causing sun-sensitive skin lesions, discoid scarring plaques, or a classic butterfly rash across the face.",
+    "symptoms": [
+      "Red, malar (butterfly) rash across nose and cheeks",
+      "Coin-shaped (discoid) scaly, thick red plaques that leave scars",
+      "Extreme photosensitivity (flares triggered by sun exposure)",
+      "Hair loss (alopecia) and mouth sores"
+    ],
+    "causes": [
+      "Autoimmune response targeting skin cells",
+      "Genetic susceptibility triggered by UV radiation"
+    ],
+    "precautions": [
+      "Strict daily sun protection with SPF 50+ and broad-brimmed hats",
+      "Avoid sun lamps, fluorescent light exposure, and indoor tanning",
+      "Do not smoke as smoking reduces treatment efficacy"
+    ],
+    "warning_signs": [
+      "Joint pain, fever, fatigue, or chest pain indicating systemic lupus (SLE)"
+    ],
+    "doctor_advice": "Requires ongoing management by a dermatologist and rheumatologist with antimalarial drugs (hydroxychloroquine) and topical anti-inflammatories.",
+    "reference_url": "https://www.lupus.org/resources/cutaneous-lupus",
+    "last_reviewed": "2026-03-01"
+  },
+  "Urticaria": {
+    "disease_name": "Urticaria (Hives)",
+    "description": "Urticaria (Hives) is a vascular skin reaction characterized by transient, itchy raised welts (wheals) caused by mast cell histamine release.",
+    "symptoms": [
+      "Raised, intensely itchy red or skin-colored welts (wheals)",
+      "Blanch (turn white) when pressed",
+      "Lesions change location rapidly, disappearing in one area and appearing elsewhere",
+      "Individual welts resolve within 24 hours without leaving scars"
+    ],
+    "causes": [
+      "Histamine release triggered by food, medication, viral infection, insect stings, stress, or physical pressure"
+    ],
+    "precautions": [
+      "Avoid known allergic triggers, hot baths, and tight clothing",
+      "Take non-drowsy OTC antihistamines (cetirizine, loratadine, fexofenadine)",
+      "Apply cool compresses to soothe itchy skin"
+    ],
+    "warning_signs": [
+      "Difficulty breathing, swallowing, tongue/throat swelling, or dizziness (anaphylaxis - Call 911 immediately)",
+      "Individual welts that persist in one spot over 24 hours or leave bruising"
+    ],
+    "doctor_advice": "Emergency care is required if anaphylaxis occurs. Chronic hives (>6 weeks) require allergy and dermatological evaluation.",
+    "reference_url": "https://www.aad.org/public/diseases/a-z/hives-overview",
+    "last_reviewed": "2026-03-01"
+  }
+}

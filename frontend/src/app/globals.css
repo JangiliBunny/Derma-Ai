@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-medical-bg: #f8fafc;
+  --color-medical-primary: #0284c7; /* Sky 600 */
+  --color-medical-secondary: #0d9488; /* Teal 600 */
+  --color-medical-accent: #38bdf8; /* Sky 400 */
+  --color-medical-dark: #0f172a; /* Slate 900 */
+  --color-medical-card: #ffffff;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-medical-bg);
+    color: var(--color-medical-dark);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+html, body {
+  height: 100%;
+}

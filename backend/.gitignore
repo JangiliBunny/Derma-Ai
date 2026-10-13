@@ -1,0 +1,36 @@
+# Python cache & virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Server logs
+*.log
+
+# Large ML Datasets & Raw Images
+dataset/raw/
+dataset/train/
+dataset/val/
+dataset/test/
+dataset/Fitzpatrick17k/
+
+# Trained Model Weights & Binary Checkpoints
+# Blanket ignore intermediate training checkpoints, but explicitly track verified production weights:
+saved_models/*.h5
+!saved_models/dermai_mobilenetv2.h5
+!saved_models/dermai_mobilenetv2_8class_exp.h5
+
+# Patient Uploads & Sensitive Media
+uploads/*
+!uploads/.gitkeep
+
+# Generated Diagnostic PDF Reports
+reports/*
+!reports/.gitkeep

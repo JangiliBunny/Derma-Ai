@@ -1,0 +1,22 @@
+{
+  "Acne": 0,
+  "Actinic Keratosis": 1,
+  "Basal Cell Carcinoma": 2,
+  "Benign Keratosis": 3,
+  "Contact Dermatitis": 4,
+  "Dermatofibroma": 5,
+  "Eczema": 6,
+  "Impetigo": 7,
+  "Lupus": 8,
+  "Melanoma": 9,
+  "Nevus": 10,
+  "Psoriasis": 11,
+  "Ringworm": 12,
+  "Rosacea": 13,
+  "Seborrheic Keratosis": 14,
+  "Tinea": 15,
+  "Urticaria": 16,
+  "Vascular Lesion": 17,
+  "Vitiligo": 18,
+  "Warts": 19
+}
