@@ -1,113 +1,259 @@
-# DermAI - Intelligent Skin Disease Detection System
+# 🩺 DermaAI — AI-Powered Skin Disease Screening System
 
-## 1. Project Overview
-DermAI is an AI-powered dermatology screening web application designed to assist users in the early detection of skin anomalies. By analyzing skin images using advanced deep learning architecture, it provides preliminary screening insights with high confidence. Beyond standard AI analysis, the platform bridges the gap between AI and human expertise by letting patients instantly share their scan results with registered dermatologists for professional diagnosis, review, and treatment booking.
+**An AI-powered web application for skin disease screening using Deep Learning and Computer Vision.**
 
----
+DermaAI is a final-year group project that combines Artificial Intelligence, Deep Learning, and Web Development to provide preliminary skin condition predictions from uploaded skin images. The platform integrates a MobileNetV2-based deep learning model with a modern web interface, user authentication, prediction history, and report generation.
 
-## 2. Core Functionalities & Features
+🌐 **Live Demo:** [DermaAI Web Application](https://derma-ai-lovat.vercel.app/)
 
-### 👤 Patient Portal
-*   **AI Skin Scanning:** Upload a photo of a skin condition to receive instantaneous AI analysis (predicted disease, confidence score, symptoms, and potential causes).
-*   **Medical History Tracking:** Keep a localized record of all past skin scans for longitudinal tracking.
-*   **Doctor Directory & Appointments:** Browse a list of available dermatologists, view their verified credentials/profiles, and seamlessly book online or in-clinic consultations.
-*   **Medical Reports Export:** Automatically generate and download comprehensive PDF medical reports summarizing the AI findings and doctor's notes.
+🔗 **Backend API:** [Railway Deployment](https://derma-ai-production.up.railway.app/)
 
-### 🩺 Doctor Portal
-*   **Clinical Dashboard:** View a secure feed of incoming appointments requested by patients.
-*   **AI Scan Review:** Review patient-uploaded skin images and AI predictions before the consultation begins.
-*   **Appointment Management:** Approve, reschedule, or complete consultation requests.
-*   **Professional Diagnosis Registration:** Override or confirm the AI's preliminary prediction, embedding a final confirmed professional diagnosis into the patient's medical history.
+📘 **API Documentation:** [FastAPI Swagger UI](https://derma-ai-production.up.railway.app/docs)
 
 ---
 
-## 3. Overall Project Structure
+## ✨ Features
 
-The platform is logically separated into two primary microservices: a modern JavaScript Frontend and an Asynchronous Python Backend.
+- 🖼️ **Skin Image Analysis** — Upload skin images for AI-based screening.
+- 🧠 **Deep Learning Model** — Uses MobileNetV2 for image classification across 20 supported skin condition classes.
+- 🔐 **User Authentication** — Registration and login functionality.
+- 🗄️ **Cloud Database** — MongoDB Atlas integration for application data.
+- 📊 **Prediction Results** — Displays predicted skin condition information.
+- 📄 **Report Generation** — Generates downloadable reports where supported.
+- 💬 **AI Chat Assistant** — Provides conversational assistance where configured.
+- 👨‍⚕️ **Doctor and Appointment Features** — Supports relevant doctor and appointment workflows where enabled.
+- 🌐 **Full-Stack Deployment** — Frontend hosted on Vercel and backend hosted on Railway.
+
+## 🧠 Supported Skin Condition Classes
+
+The current baseline model supports the following 20 classes:
+
+1. Acne
+2. Actinic Keratosis
+3. Basal Cell Carcinoma
+4. Benign Keratosis
+5. Contact Dermatitis
+6. Dermatofibroma
+7. Eczema
+8. Impetigo
+9. Lupus
+10. Melanoma
+11. Nevus
+12. Psoriasis
+13. Ringworm
+14. Rosacea
+15. Seborrheic Keratosis
+16. Tinea
+17. Urticaria
+18. Vascular Lesion
+19. Vitiligo
+20. Warts
+
+*Note: These are the model's supported output classes. They do not imply equal diagnostic accuracy or clinical validation for every condition.*
+
+## 🛠️ Technology Stack
+
+| Component | Technologies |
+|---|---|
+| Frontend | Next.js, React, TypeScript |
+| Backend | Python, FastAPI |
+| Deep Learning | TensorFlow, Keras, MobileNetV2 |
+| Database | MongoDB Atlas, Motor |
+| Authentication | Token-based authentication |
+| Report Generation | ReportLab |
+| AI Assistant | Google Gemini API, when configured |
+| Frontend Deployment | Vercel |
+| Backend Deployment | Railway |
+| Version Control | Git, GitHub |
+
+## 🏗️ System Architecture
 
 ```text
-skin-diseases/
-├── backend/
-│   ├── api/               # FastAPI Router endpoints (Auth, Predictions, Doctors, Appointments)
-│   ├── ml_pipeline/       # AI Model Training, Inference handlers, and Grad-CAM implementation
-│   ├── models/            # Pydantic Schemas ensuring strict data validation before DB insertion
-│   ├── services/          # Core Business logic (PDF Generator, JWT Authentication Utils)
-│   ├── database.py        # MongoDB connection management handling
-│   ├── main.py            # Main FastAPI server entry point and CORS configuration
-│   └── requirements.txt   # Python dependency list
-└── frontend/
-    ├── src/
-    │   ├── app/           # Next.js App Router topology (Pages for Dashboard, Scan, Auth, etc.)
-    │   ├── components/    # Reusable React UI Components (Navbars, Modals, Tables, Cards)
-    │   └── globals.css    # Global Tailwind styling injections
-    ├── package.json       # Node.js dependencies
-    ├── tailwind.config.ts # Global theme design system configuration
-    └── next.config.ts     # Next.js bundler settings
+                   ┌──────────────────────┐
+                   │       User           │
+                   └──────────┬───────────┘
+                              │
+                              ▼
+                   ┌──────────────────────┐
+                   │ Next.js Frontend     │
+                   │       Vercel         │
+                   └──────────┬───────────┘
+                              │ REST API
+                              ▼
+                   ┌──────────────────────┐
+                   │ FastAPI Backend      │
+                   │      Railway         │
+                   └──────────┬───────────┘
+                              │
+                ┌─────────────┼─────────────┐
+                ▼             ▼             ▼
+        ┌────────────┐ ┌────────────┐ ┌────────────┐
+        │ MobileNetV2│ │ MongoDB    │ │ Report and │
+        │ Inference  │ │ Atlas      │ │ AI Services│
+        └────────────┘ └────────────┘ └────────────┘
 ```
 
----
+## 🚀 Live Deployment
 
-## 4. Technologies & Software Components Used
+| Service | URL |
+|---|---|
+| Frontend | https://derma-ai-lovat.vercel.app/ |
+| Backend Health Check | https://derma-ai-production.up.railway.app/api/health |
+| API Documentation | https://derma-ai-production.up.railway.app/docs |
 
-### Frontend (User Interface)
-*   **Next.js (App Router):** The React-based framework driving server-side rendering, layout management, and dynamic routing for high SEO and performance.
-*   **TypeScript:** Used heavily for strict type-checking, drastically reducing run-time bugs.
-*   **Tailwind CSS:** A utility-first CSS framework utilized for crafting the modern, glass-morphism inspired, responsive user interface.
-*   **Lucide React & Framer Motion:** Drives the platform's iconography and smooth, dynamic micro-animations (e.g., fluid modal pop-ups and transition states).
+## ⚙️ Local Installation and Setup
 
-### Backend (Logic & APIs)
-*   **Python:** The core language powering data manipulation, the API, and machine learning components.
-*   **FastAPI:** An extremely fast, high-performance web framework for constructing the RESTful API endpoints.
-*   **Uvicorn:** The lightning-fast ASGI web server hosting the FastAPI application.
-*   **Pydantic:** Validates all incoming and outgoing JSON payloads against explicitly defined Python dataclass schemas.
-*   **ReportLab:** Programmatically synthesizes downloadable, formatted PDF medical documents containing patient data.
+### Prerequisites
 
-### Database & Security Structure
-*   **MongoDB:** The primary NoSQL database leveraged to store user records, complex nested AI prediction histories, and appointment graphs.
-*   **Motor:** An asynchronous Python driver acting as the conduit linking FastAPI to MongoDB without blocking the event loop.
-*   **Python-JOSE (JWT Tokenization):** Handles generation and validation of secure authorization bearer tokens, facilitating stateful user sessions statelessly.
-*   **Passlib (Bcrypt):** Ensures passwords are cryptographically salted and hashed before ever touching the database.
+- Node.js and npm
+- Python 3.10–3.12, subject to dependency compatibility
+- MongoDB local instance or MongoDB Atlas account
+- Git
 
----
+### 1. Clone the repository
 
-## 5. Machine Learning Models & Algorithms
+```bash
+git clone https://github.com/JangiliBunny/Derma-Ai.git
+cd Derma-Ai
+```
 
-*   **Core Architecture - MobileNetV2 (Transfer Learning):** 
-    The artificial intelligence driving DermAI relies heavily on **MobileNetV2**. This specific Convolutional Neural Network (CNN) architecture was chosen due to its robust balance of accuracy and computational efficiency. It allows the system to achieve highly accurate Multi-Class Image Classifications with minimal latency, making it ideal for scalable edge and web deployments.
-*   **Algorithmic Optimization Pipeline:** 
-    The training process utilizes the Adam Optimizer coupled with Categorical Cross-Entropy Loss and strategic Learning Rate Decay scheduling to ensure localized minimums are avoided during gradient descent.
-*   **Model Explainability - Grad-CAM:** 
-    Gradient-weighted Class Activation Mapping (Grad-CAM) is implemented to generate a visual heatmap directly over the uploaded skin image. This visually highlights exactly which granular pixels the mobile-net model factored most heavily into its prediction, establishing critical trust with medical professionals reviewing the scans.
+### 2. Configure the backend
 
----
+```bash
+cd backend
+python -m venv venv
+```
 
-## 6. Software Requirements & Data Flow (SRS Walkthrough)
+Activate the virtual environment.
 
-### Phase 1: Authentication & Authorization Flow
-1. **Registration:** Roles are separated at birth (Patient, Doctor, Admin). The backend digests the payload, strips the password, hashes it using Bcrypt, and stores the `User` object spanning MongoDB.
-2. **Session Generation:** Upon valid login, the `oauth2` endpoint delegates a signed JWT containing the user's explicit Role mapping, enabling Role-Based Access Control (RBAC) across all API endpoints.
+**Windows:**
 
-### Phase 2: AI Predictive Analysis Flow
-1. **Data Ingestion:** A Patient visually drops an image into the `/scan` portal.
-2. **Transmission:** A `multipart/form-data` POST request is fired to the backend `/api/predictions/analyze` endpoint.
-3. **Hashing & Storage:** The backend takes a cryptogram SHA-256 hash of the image. It checks the DB; if this exact image was previously analyzed, it instantly returns the cached result to save compute overhead. Otherwise, it stores the image locally to `/uploads`.
-4. **Inference Execution:** The image tensor is passed into the `.h5` MobileNetV2 model payload via `ml_pipeline/inference.py`. 
-5. **Persistence:** The returned tensor mappings are parsed into human-readable conditions (Confidence, Precautions, Symptoms). This payload is injected into a `ScanHistory` object and saved to the patient document.
+```powershell
+venv\Scripts\activate
+```
 
-### Phase 3: Clinical Routing & Appointment Flow
-1. **Doctor Discovery:** Patient routes to the `/doctors` directory to fetch the active pool of physicians. 
-2. **Modal Interaction:** Clicking "Book Appointment" populates the `BookAppointmentModal`. 
-3. **Data Linkage:** The Patient can optionally link the `Scan IDs` generated in Phase 2 directly to the appointment request. 
-4. **State Transition:** The payload enters the DB as an `Appointment` with a standard state of `"Pending"`.
-5. **Doctor Review:** The requested Doctor logs into their dashboard, views the connected visual scan/AI data, and patches the Appointment State to `"Approved"`.
+**macOS/Linux:**
 
-### Phase 4: Diagnostic PDF Generation Flow
-1. Upon consultation completion, or manually via the Patient Dashboard, the UI triggers a `GET /{scan_id}/download`.
-2. The Backend intercepts the active JWT, ensures the requester is either the explicit owner of the scan or the assigned Doctor.
-3. The server natively invokes `ReportLab`, dynamically generating a clinical-grade PDF merging the initial AI findings with the Final Doctor's Diagnosis.
-4. An `application/pdf` Blob payload is returned to the client and saved locally.
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a local `.env` file inside `backend/` using `backend/.env.example` as a reference. Configure the required variables, including:
+
+```env
+MONGODB_URL=your_mongodb_connection_string
+SECRET_KEY=your_generated_secret
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=1440
+CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+MODEL_TYPE=baseline_20class
+```
+
+Use your own credentials and generated secret. Never commit `.env` files or expose API keys.
+
+Start the backend from the `backend` directory:
+
+```bash
+uvicorn main:app --reload --port 8000
+```
+
+Backend API: `http://localhost:8000`
+
+API documentation: `http://localhost:8000/docs`
+
+### 3. Configure the frontend
+
+Open a new terminal:
+
+```bash
+cd frontend
+npm install
+```
+
+Create `frontend/.env.local`:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Frontend: `http://localhost:3000`
+
+## 📂 Project Structure
+
+```text
+Derma-Ai/
+├── backend/
+│   ├── main.py
+│   ├── database.py
+│   ├── requirements.txt
+│   ├── models/
+│   ├── services/
+│   ├── ml_pipeline/
+│   ├── saved_models/
+│   ├── uploads/
+│   └── reports/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   ├── components/
+│   │   └── lib/
+│   ├── package.json
+│   └── .env.example
+│
+└── README.md
+```
+
+*The structure above is representative; actual folders may differ based on your current repository.*
+
+## 🔬 Deep Learning Workflow
+
+1. The user uploads a skin image through the web application.
+2. The frontend sends the image to the FastAPI backend.
+3. The backend preprocesses the image for the trained MobileNetV2 model.
+4. The model predicts a class from its supported output classes.
+5. The backend returns the prediction and available supporting information.
+6. The application displays the result and provides other enabled features, such as report generation.
+
+## 👥 Project Team
+
+This project was developed collaboratively as a final-year academic group project.
+
+| Team Member | Responsibility | GitHub |
+|---|---|---|
+| **JANGILI BUNNY** | Project Development and Integration | [@JangiliBunny](https://github.com/JangiliBunny) |
+| **VELDANDI RAKESH** | [Frontend Development / UI] | [@friend1](https://github.com/VeldandiRakesh) |
+| **NAMPELLY GNYANENDRACHARY** | [Backend Development / APIs] | [@friend2](https://github.com/NAMPELLYGNYANENDRACHARY) |
+| **VINAY GOUD KOTA** | [Machine Learning / Testing] | [@friend3](https://github.com/friend3) |
 
 
-backend: python -m uvicorn main:app --reload --port 8000
+## 🔮 Future Enhancements
 
-frontend:npm run dev
+- Improve model performance through additional training and evaluation.
+- Expand and validate datasets across different skin tones and image conditions.
+- Improve accessibility and responsive user experience.
+- Add comprehensive model evaluation metrics and explainability features.
+- Improve image storage, monitoring, and deployment reliability.
+
+## ⚠️ Medical Disclaimer
+
+DermaAI is an academic project intended for educational demonstration and preliminary skin condition screening research. Its predictions are experimental and are **not a medical diagnosis**. It is not a substitute for professional medical advice, examination, or treatment. Consult a qualified healthcare professional for medical concerns.
+
+## 🎓 Project Information
+
+**Project Type:** Final-Year Group Project  
+**Domain:** Artificial Intelligence, Deep Learning, and Full-Stack Web Development  
+**Model:** MobileNetV2  
+**Application:** Web-Based Skin Disease Screening System
