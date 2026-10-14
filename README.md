@@ -236,7 +236,7 @@ This project was developed collaboratively as a final-year academic group projec
 | **JANGILI BUNNY** | Project Development and Integration | [@JangiliBunny](https://github.com/JangiliBunny) |
 | **VELDANDI RAKESH** | [Frontend Development / UI] | [@VeldandiRakesh](https://github.com/VeldandiRakesh) |
 | **NAMPELLY GNYANENDRACHARY** | [Backend Development / APIs] | [@N.Gnyanendrahary](https://github.com/NAMPELLYGNYANENDRACHARY) |
-| **VINAY GOUD KOTA** | [Machine Learning / Testing] | [@Vinay goud](https://github.com/friend3) |
+| **VINAY GOUD KOTA** | [Machine Learning / Testing] | [@Vinay goud](https://github.com/VinayGoud622) |
 
 
 ## 🔮 Future Enhancements
